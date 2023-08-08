@@ -5,7 +5,7 @@ on:
 jobs:
   Run-npm-on-Ubuntu:
     name: Run npm on Ubuntu
-    runs-on: window-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/setup-node@v3
         with:
