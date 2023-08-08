@@ -1,0 +1,15 @@
+name: Run commands on different operating systems
+on:
+ workflow_dispatch:
+
+jobs:
+  Run-npm-on-Ubuntu:
+    name: Run npm on Ubuntu
+    runs-on: window-latest
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name : testing npm command
+        run: |
+          npm install --g --production windows-build-tools
