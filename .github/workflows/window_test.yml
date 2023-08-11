@@ -14,4 +14,4 @@ jobs:
         run: |
           node -v
           npm -v
-          npm install --g --production windows-build-tools@5.0.0
+          npm install --g --production windows-build-tools@4.0.0
